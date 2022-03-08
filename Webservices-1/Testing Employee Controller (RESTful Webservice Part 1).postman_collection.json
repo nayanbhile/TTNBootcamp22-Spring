@@ -94,11 +94,11 @@
 		{
 			"name": "Update-Employee",
 			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n        \"id\": 34570,\n        \"name\": \"Bob\",\n        \"age\": 32\n}",
+					"raw": "{\n        \"id\": 34570,\n        \"name\": \"Robert\",\n        \"age\": 32\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -106,14 +106,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/employees-update",
+					"raw": "http://localhost:8080/employees",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"employees-update"
+						"employees"
 					]
 				}
 			},

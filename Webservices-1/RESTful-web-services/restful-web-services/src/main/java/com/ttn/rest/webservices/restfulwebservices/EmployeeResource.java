@@ -50,7 +50,7 @@ public class EmployeeResource {
         return ResponseEntity.created(location).build();
     }
 
-    @PostMapping("/employees-update")
+    @PutMapping("/employees")
     public ResponseEntity<Object> updateEmployee(@Valid @RequestBody EmployeeDTO employeeDTO)
     {
         EmployeeDTO addedEmployee= EmployeeDAO.updateEmployee(employeeDTO);
